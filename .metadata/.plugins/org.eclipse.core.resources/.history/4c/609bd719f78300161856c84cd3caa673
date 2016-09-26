@@ -1,0 +1,19 @@
+package _04_Strings;
+
+public class _02_challenges 
+{
+	public static void main(String[] args)
+	{
+		String x= "sally sells seashells";
+		char check="s";
+		int count =0;
+		for (int s=0; s<x.length(); s++)
+		{
+			if (x.charAt(s) == 'check')
+			{
+				count++;
+			}
+		}
+		System.out.println(count);	
+	}
+}

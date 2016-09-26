@@ -1,0 +1,29 @@
+package _08_DataCollection;
+import java.util.*;
+
+public class _03_ArrayListChallenge 
+{
+	public static void main(String[] args)
+	{
+		    ArrayList<Integer> array = new ArrayList<Integer>();
+			array.add(1); array.add(2); array.add(3); array.add(4); array.add(5); array.add(6); array.add(7); array.add(8); array.add(9); array.add(10);
+			ListIterator<Integer>listIterator=array.listIterator();
+			
+			boolean first_loop= false;
+			int current_sum= 1;
+			for (int i=0; i<array.size(); i++)
+			{
+				if(first_loop= false)
+				{	
+					current_sum+=array.get(0)+array.get(1);
+					System.out.println("1 + 2 = 3");
+					current_sum++;
+					first_loop= true;
+				}
+				else
+				{
+					
+				}
+			}
+	}
+}

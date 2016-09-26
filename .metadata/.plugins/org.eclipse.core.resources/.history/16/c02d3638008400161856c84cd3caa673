@@ -1,0 +1,20 @@
+package _07_Conditionals;
+import java.util.Scanner;
+
+public class _02_If_Else {
+
+	public static void main(String[] args) 
+	{
+		Scanner input= new Scanner(System.in);
+		
+		double rate;
+		int hours;
+		
+		System.out.print( "Enter hourly rate: " );
+		double rate = input.nextInt();
+		
+		System.out.print( "Enter how many hours worked: " );
+		int hours = input.nextInt();
+	}
+
+}

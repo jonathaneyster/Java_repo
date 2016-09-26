@@ -1,0 +1,35 @@
+package _07_Conditionals;
+
+import java.util.Scanner;
+
+public class _03_Else_If 
+{
+	public static void main(String[] args) 
+	{
+		  Scanner input= new Scanner(System.in);
+
+		
+	      System.out.println("Enter your grade as a percent:");
+	      int  grade = input.nextInt();
+		
+	      if (grade == 100)
+	      {
+	    	System.out.println ("Your letter grade is an A+");  
+	    	
+	      }
+	      else if (grade <= 99 && grade >= 90)
+	      {
+	    	System.out.println("Your letter grade is an A");	
+	      }
+	      else if (grade <= 89 && grade >= 80)
+	      {
+	    	System.out.println("Your letter grade is a B");	
+	      }
+	     else if (grade <= 99 && grade >= 90)
+	     {
+	    	System.out.println("Your letter grade is an A");	
+	     }	      
+	    	  
+      
+	}
+}

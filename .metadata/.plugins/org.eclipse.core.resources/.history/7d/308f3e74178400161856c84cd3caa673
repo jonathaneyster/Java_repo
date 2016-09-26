@@ -1,0 +1,26 @@
+package _08_DataCollection;
+import java.util.*;
+
+public class _03_ArrayListChallenge 
+{
+	public static void main(String[] args)
+	{
+		    ArrayList<Integer> array = new ArrayList<Integer>();
+			array.add(1); array.add(2); array.add(3); array.add(4); array.add(5); array.add(6); array.add(7); array.add(8); array.add(9); array.add(10);
+			
+			int current_sum= 0;
+			int ind_count= 1;
+			if (current_sum == 0)
+			{
+				current_sum+=array.get(0)+array.get(1);
+				System.out.println("1+2=3");
+				ind_count++;
+			}
+			else if (current_sum != 0 && ind_count<10)
+			{
+				current_sum+=array.get(ind_count)+array.get(ind_count+1);
+				System.out.println(ind_count "\u002B" ind_count+1 "\u003D" current_sum);
+				ind_count++;
+			}
+	}
+}

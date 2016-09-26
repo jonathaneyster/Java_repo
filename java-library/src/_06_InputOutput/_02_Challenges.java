@@ -1,0 +1,64 @@
+package _06_InputOutput;
+import java.util.*;
+
+public class _02_Challenges 
+{
+	public static void main(String[] args)
+	{
+		Scanner keyboard = new Scanner(System.in);
+
+		String a, b, c, d;
+
+		System.out.println(" You see a wide open door ahead. Do you go through it?  ");
+		System.out.println(" Enter yes or no: ");
+		System.out.print("> ");
+		a = keyboard.next();
+
+		if (a.equalsIgnoreCase("yes")) 
+		{
+		    System.out.println("You enter the door, you can go upstairs or downstairs.");
+		    System.out.println(" Go upstairs or downstairs: ");
+		    System.out.print(">  ");
+		    b = keyboard.next();
+		    
+		    if (b.equalsIgnoreCase("upstairs")) 
+		    {
+		        System.out.println("You walk upstairs, and see a plate of food. Do you eat it?");
+		        System.out.println("Enter yes or no: ");
+		        System.out.print(">  ");
+		        d = keyboard.next();
+
+		        if (d.equalsIgnoreCase("Yes")) {
+		            System.out.println("  ");
+		            System.out.println("The food wasn't poisoned, you live.");
+		        } else if (d.equalsIgnoreCase("No")) {
+		            System.out.println("  ");
+		            System.out.println("You can't find anymore food before you starve to death.");
+		        }
+		     } 
+		     else if (b.equalsIgnoreCase("downstairs")) 
+		     {
+		        System.out.println("You walk downstairs, and see a plate of food. Do you eat it??");
+		        System.out.println("Enter yes or no: ");
+		        System.out.print(">  ");
+		        c = keyboard.next();
+
+		        if (c.equalsIgnoreCase("yes")) 
+		        {
+		            System.out.println("  ");
+		            System.out.println("The food was poisoned, you die.");
+		        } 
+		        else if (c.equalsIgnoreCase("no")) 
+		        {
+		            System.out.println("  ");
+		            System.out.println("You go searching for more food...");
+		        }
+		     }
+		}
+		else 
+		{
+			System.out.println("You stand outside the door until you freeze to death.");
+		}
+		keyboard.close();
+	}
+}

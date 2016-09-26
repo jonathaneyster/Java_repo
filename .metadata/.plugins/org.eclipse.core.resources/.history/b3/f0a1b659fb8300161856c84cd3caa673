@@ -1,0 +1,63 @@
+package _06_InputOutput;
+import java.util.Scanner;
+
+public class _02_Challenges 
+{
+	public static void main(String[] args)
+	{
+		Scanner keyboard = new Scanner(System.in);
+
+		String a, b, Pantry, Eat;
+
+		System.out.println(" You see a wide open door ahead. Do you go through it?  ");
+		System.out.println(" Enter yes or no: ");
+		System.out.print("> ");
+		a = keyboard.next();
+
+		if (a.equalsIgnoreCase("yes")) 
+		{
+		    System.out.println("You enter the door, you can go upstairs or downstairs.");
+		    System.out.println(" Go upstairs or downstairs: ");
+		    System.out.print(">  ");
+		    b = keyboard.next();
+
+		    if (b.equalsIgnoreCase("refrigerator")) 
+		    {
+		        System.out.println("Inside the refrigerator you see food and stuff. It looks pretty nasty. Would you like to eat some of the food, 'Yes' or 'No'?");
+		        System.out.print(">  ");
+		        Eat = keyboard.next();
+
+		        if (Eat.equalsIgnoreCase("Yes")) {
+		            System.out.println("  ");
+		            System.out.println("You live!");
+		        } else if (Eat.equalsIgnoreCase("No")) {
+		            System.out.println("  ");
+		            System.out.println("You die of starvation!");
+		        }
+		     } 
+		     else if (b.equalsIgnoreCase("pantry")) 
+		     {
+		        System.out.println("There is a killer inside. Do you want to 'fight' them, or 'run away'?");
+		        System.out.print(">  ");
+		        Pantry = keyboard.next();
+
+		        if (Pantry.equalsIgnoreCase("fight")) 
+		        {
+		            System.out.println("  ");
+		            System.out.println("You're weak and die");
+		        } 
+		        else if (Pantry.equalsIgnoreCase("run away")) 
+		        {
+		            System.out.println("  ");
+		            System.out.println("You died because your too slow & can't run");
+		        }
+		     }
+		    if (a.equalsIgnoreCase("no"))
+		    {
+		    	
+		    }
+		}
+		
+			
+	}
+}

@@ -1,0 +1,11 @@
+package _08_DataCollection;
+import java.util.*;
+
+public class _03_ArrayListChallenge 
+{
+	public static void main(String[] args)
+	{
+		ArrayList<String> aList = new ArrayList<String>();
+		
+	}
+}

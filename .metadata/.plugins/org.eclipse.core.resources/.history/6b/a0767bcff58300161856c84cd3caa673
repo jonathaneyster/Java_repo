@@ -1,0 +1,9 @@
+package _04_Strings;
+
+public class _02_challenges 
+{
+	public static void main(String[] args)
+	{
+		String s= "sally sells seashells";
+	}
+}

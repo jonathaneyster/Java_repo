@@ -1,0 +1,60 @@
+package _06_InputOutput;
+import java.util.Scanner;
+
+public class _02_Challenges 
+{
+	public static void main(String[] args)
+	{
+		Scanner keyboard = new Scanner(System.in);
+
+		String a, b, Pantry, Eat;
+
+		System.out.println(" You see a wide open door ahead. Do you go through it?  ");
+		System.out.println(" Enter yes or no: ");
+		System.out.print("> ");
+		a = keyboard.next();
+
+		if (a.equalsIgnoreCase("yes")) 
+		{
+		    System.out.println("You enter the door, you can go upstairs or downstairs.");
+		    System.out.println(" Go upstairs or downstairs: ");
+		    System.out.print(">  ");
+		    b = keyboard.next();
+		    
+		    if (b.equalsIgnoreCase("upstairs")) 
+		    {
+		        System.out.println("You walk upstairs, and see a plate of food. Do you eat it?");
+		        System.out.println("Enter yes or no: ");
+		        System.out.print(">  ");
+		        Eat = keyboard.next();
+
+		        if (Eat.equalsIgnoreCase("Yes")) {
+		            System.out.println("  ");
+		            System.out.println("The food wasn't poisoned, you live.");
+		        } else if (Eat.equalsIgnoreCase("No")) {
+		            System.out.println("  ");
+		            System.out.println("The food was poisoned, you die.");
+		        }
+		     } 
+		     else if (b.equalsIgnoreCase("downstairs")) 
+		     {
+		        System.out.println("You walk downstairs, and see a plate of food. Do you eat it??");
+		        System.out.println("Enter yes or no: ");
+		        System.out.print(">  ");
+		        Pantry = keyboard.next();
+
+		        if (Pantry.equalsIgnoreCase("yes")) 
+		        {
+		            System.out.println("  ");
+		            System.out.println("The food was poisoned, you die.");
+		        } 
+		        else if (Pantry.equalsIgnoreCase("no")) 
+		        {
+		            System.out.println("  ");
+		            System.out.println("You died because your too slow & can't run");
+		        }
+		     }
+
+		}		
+	}
+}

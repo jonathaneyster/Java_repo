@@ -1,0 +1,29 @@
+package _06_InputOutput;
+import java.applet.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class _02_Challenges 
+{
+	public static void main(String[] args)
+	{
+		MyJFrame();
+	}
+	public static void MyJFrame()
+	{
+		 	JLabel start = new JLabel("Enter the amount below to calculate");
+	        start.setBounds(/*x*/70, -65/*Y*/, 270, 150); // x, y, width, height    x across, y down
+	        JLabel milecon = new JLabel("Miles");
+	        milecon.setBounds(154, 55, 50, 150);
+	        JLabel nautcon = new JLabel("Nautical Miles");
+	        nautcon.setBounds(135, -15, 150, 150);
+
+	        //JTextField
+	        JTextField miles = new JTextField();
+	        miles.setBounds(100, 140, 150, 25);
+	        JTextField nautical = new JTextField();
+	        nautical.setBounds(100, 70, 150, 25);
+	        
+	        double mile, nautmile;
+	}
+}

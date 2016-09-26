@@ -1,0 +1,10 @@
+package _03_Numbers;
+
+public class _01_Numbers 
+{
+	public static void main(String[] args) 
+	{
+		byte x= 10000000;
+		
+	}
+}

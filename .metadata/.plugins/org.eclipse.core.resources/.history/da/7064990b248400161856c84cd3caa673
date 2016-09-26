@@ -1,0 +1,15 @@
+package _09_loops;
+import java.util.*;
+
+public class _02_for 
+{
+	public static void main(String[] args) 
+	{
+		Scanner input= new Scanner(System.in);
+		
+		System.out.println("Input your text here:");
+	    String userCount = input.next();
+		input.close();
+	}
+
+}

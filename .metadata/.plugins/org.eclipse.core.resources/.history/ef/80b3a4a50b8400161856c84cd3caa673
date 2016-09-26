@@ -1,0 +1,41 @@
+package _07_Conditionals;
+import java.util.Scanner;
+
+public class _02_If_Else
+{
+
+	public static void main(String[] args) 
+	{
+		  Scanner input= new Scanner(System.in);
+
+		
+	      System.out.println("Enter hourly pay rate:");
+	      double  pay = input.nextDouble();
+		
+	      System.out.println("Enter number of hours worked:");
+	      double  hours = input.nextDouble();
+		
+	      double  gross_pay = pay * hours;
+	      
+	      System.out.println("Hours worked: " + hours);
+	      
+	      System.out.println(" Enter payrate: " + pay);
+	 
+	      System.out.println(" Enter gross pay: " + gross_pay);	      
+	}
+	public class findPay
+	{
+		private double rate, pay;
+		private int hours;
+		
+		public double calculatePay(int hours, double rate)
+		{
+			pay = hours * rate;
+			return pay; 
+		}
+		public void displayEmployee()
+		{
+			System.out.printf( "\nGross Salary: %f", pay);
+		}
+	}
+}

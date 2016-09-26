@@ -1,0 +1,23 @@
+package _08_DataCollection;
+import java.util.*;
+
+public class _03_ArrayListChallenge 
+{
+	public static void main(String[] args)
+	{
+		ArrayList<Integer> numbers = new ArrayList<>();
+		int valueArray = 0;
+		for (int i=1; i<11; ++i)
+		{
+			numbers.add(i);
+		}
+		for (int i=0; i<numbers.size(); ++i)
+		{
+			int x = valueArray + numbers.get(i);
+			System.out.println(valueArray + " + " + numbers.get(i) + " = " + x);
+			valueArray += numbers.get(i);
+		}
+		System.out.println(numbers);
+		System.out.println("The total of the array is:" + valueArray);
+	}
+}

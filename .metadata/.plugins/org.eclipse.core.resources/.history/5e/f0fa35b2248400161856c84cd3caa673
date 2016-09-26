@@ -1,0 +1,25 @@
+package _09_loops;
+import java.util.*;
+
+public class _02_for 
+{
+	public static void main(String[] args) 
+	{
+		Scanner input= new Scanner(System.in);
+		char check='s';
+		System.out.println("Input your text here:");
+	    String userCount = input.next();
+
+		int count =0;
+		for (int i=0; i<userCount.length(); i++)
+		{
+			if (userCount.charAt(i) == check)
+			{
+				count++;
+			}
+		}
+		System.out.println(count);		    
+		input.close();
+	}
+
+}

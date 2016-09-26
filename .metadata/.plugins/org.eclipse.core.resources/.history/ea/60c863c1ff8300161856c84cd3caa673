@@ -1,0 +1,18 @@
+package _07_Conditionals;
+import java.util.Scanner;
+
+public class _02_If_Else {
+
+	public static void main(String[] args) 
+	{
+		Scanner input= new Scanner(System.in);
+		
+		int pay;
+		int hoursWorked;
+		
+		
+		System.out.println(" Enter your hourly pay: ");
+		System.out.println(" Enter the number of hours you worked: ");
+	}
+
+}

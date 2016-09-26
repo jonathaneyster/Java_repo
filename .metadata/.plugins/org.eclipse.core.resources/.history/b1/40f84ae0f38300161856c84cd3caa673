@@ -1,0 +1,11 @@
+package _03_Numbers;
+
+public class _02_Operators 
+{
+	public static void main(String[] args)
+	{
+		var x= 10;
+		vay y= 5;
+		System.out.println("x+y"); 
+	}
+}
